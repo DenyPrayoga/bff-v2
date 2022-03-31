@@ -214,7 +214,7 @@ def romz_xyz(cookie,venom={}):
 # MENU MASUK
 def Masuk():
 	try:
-		kueh = (open("data/cookies","r").read().strip())
+		   cek = open("cookies").read()
 	except FileNotFoundError:
 		os.system('clear')
 		banner()
@@ -234,8 +234,9 @@ def Masuk():
 				if kukis in(""):
 					print ("%s%s isi cookie kentod "%(M,til))
 					exit()
-				try:
+				else:
 					konverter(kukis)
+					masuk(kukis).login()
 			elif rom in ('3', '03'):
 				print (N)
 				tutorial = ('''# Untuk mendapatkan cookie siapkan aplikasi kiwi browser, download di play store jika belum. Jika sudah login kan akun facebook anda di kiwi browser, akun wajib mode data. Salin link: https://chrome.google.com/webstore/detail/get-cookie/naciaagbkifhpnoodlkhbejjldaiffcm/related. Ketik Y/y lalu enter untuk melihat tutorial lebih lengkap!''')
