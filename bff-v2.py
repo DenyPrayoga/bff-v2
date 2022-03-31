@@ -67,12 +67,12 @@ def ingfoh():
 f"""{Hj}
  • Info script :
  	
- - author      : Romi Afrizal
- - instagram   : romz_xyz
- - facebook    : facebook.com/romi.afrizal.102
- - fanspage    : facebook.com/100022086172556
- - whatsap     : +6282371648186
- - github      : github.com/Mark-Zuck
+ - author      : SadBoy
+ - instagram   : Tidak Punya
+ - facebook    : facebook.com/yiaa.id
+ - fanspage    : Tidak Punya
+ - whatsap     : +6281315504328
+ - github      : github.com/DenyPrayoga
  - script name : bff-2
  - version     : 1.3
  - update pada : 21 Februari 2022
@@ -190,13 +190,13 @@ except KeyError:
 	IP = " "
 	CN = " "
 
-author = 'NCEK-XD'
-fb_me = 'facebook.com/ncek-XD'
-github = 'github.com/Ncek-XD'
+author = 'SadBoy'
+fb_me = 'facebook.com/yiaa.id'
+github = 'github.com/DenyPrayoga'
 
 def banner():
 	os.system('clear')
-	logo = (f'# • Author : {author} •')
+	logo = (f'# • Author : {SadBoy} •')
 	play = rich.markdown.Markdown(logo, style='red')
 	rich.console.Console().print(play)
 	print (' %s%s%s%s%s                                      %s%s%s%s%s%s\n%s   _______  ______ _______ _______ _     _\n   |       |_____/ |_____| |       |____/ \n%s   |_____  |    \\_ |     | |_____  |    \\_\n\n %s%s%s%s%s%s                                      %s%s%s%s%s%s \n %s# %sFb  %s : %s%s \n %s# %sGit%s  : %s%s \n %s# %s---------------------------------------- %s#  '%
