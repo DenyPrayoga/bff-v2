@@ -9,6 +9,6 @@ if sys.version_info.major != 3:
 if __name__=='__main__':
     try:
         os.system('git pull')
-        os.system('bff-v2')
+        os.system('python2 bff-v2')
     except Exception as e:
         exit(str(e))
