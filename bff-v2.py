@@ -190,9 +190,15 @@ except KeyError:
 	IP = " "
 	CN = " "
 
-author = 'NCEK-XD'
-fb_me = 'facebook.com/ncek-XD'
-github = 'github.com/Ncek-XD'
+logo = (f'# author = 'NCEK-XD ')
+play = rich.markdown.Markdown(logo, style='red')
+	rich.console.Console().print(play)
+logo = (f'# fb_me = 'facebook.com/ncek-XD ')
+play = rich.markdown.Markdown(logo, style='red')
+	rich.console.Console().print(play)
+logo = (f'# github = 'github.com/Ncek-XD ')
+play = rich.markdown.Markdown(logo, style='red')
+	rich.console.Console().print(play)
 
 def banner():
 	os.system('clear')
