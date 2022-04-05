@@ -189,7 +189,8 @@ try:
 except KeyError:
 	IP = " "
 	CN = " "
-
+def banner():
+	os.system('clear')
 logo = (f'# author = 'NCEK-XD ')
 play = rich.markdown.Markdown(logo, style='red')
 	rich.console.Console().print(play)
